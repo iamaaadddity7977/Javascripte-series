@@ -723,3 +723,37 @@ one()
 //push on Git hub
 // *************************************************************lecture No 25
 //?
+
+
+
+
+
+
+
+
+// *************************************************************lecture no 30
+//? Filter map Reduce 
+
+const coddding = ["Aditya", "Ironman", "Hulk", "Superman", "spiderman"];
+
+const someValues = coddding.forEach(  (items) => {
+    //console.log(items)   //use karke truy kiya hai for each ke liye kisi bhi variable mein store karke denkha value return nhi karega
+    return items;
+}  )
+
+console.log(someValues);   // ek undefiend value return karega  last mein  for each koii bhi value return nhi karta 
+
+//? filter 
+
+const MYNum = [0,1,2,3,4,5,6,7,8,9,10];
+
+// const MYNumCall = MYNum.filter(  (num)  => num > 5);
+const MYNumCall = MYNum.filter(  (num)  =>  {
+           return num > 5;
+});
+console.log(MYNumCall);
+
+
+
+
+
