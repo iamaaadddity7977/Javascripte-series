@@ -723,7 +723,284 @@ one()
 //push on Git hub
 // *************************************************************lecture No 25
 //?
+//? Execute code & call stack
+// https://www.youtube.com/watch?v=ByhtOgF6uYM&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=25       Notes inn the video 
+// file:///C:/Users/sarry/Downloads/Aditya/All in one/tutorial.html
 
+let val1 = 5
+let val2 = 10
+
+function addition(NuM1, NuM2) {
+    let total = NuM1 + NuM2
+    return total;
+}
+
+let result1 = addition(val1, val2)
+console.log(result1);
+let result2 = addition(10, 3);
+console.log(result2)
+
+// file:///C:/Users/sarry/Downloads/Aditya/All in one/tutorial.html
+
+// call Stack  Example 
+
+function one() {
+    console.log("one")
+    two()
+
+}
+function two() {
+    console.log("two")
+    three()
+
+}
+function three() {
+    console.log("three")
+    // one()  can,t do infinite 
+
+}
+one()
+// two()
+// three()
+
+// *************************************************************lecture No 26 *******************************************************************
+//? control flow inn JS
+// HEllo world  kksknkfkllvvadd
+
+// ? if 
+
+const isUserloggedIn = 4
+const temp = 41
+
+if (temp >= 83) {   //is  line  ka temp se comparions hota eg 83 jo hai wow 41 badha hai >=
+    console.log("Temperature is Less Then 50");
+} else {
+    console.log("Temperature is Greater Then 50");
+
+}
+console.log(isUserloggedIn != temp)  // best example to understand all this symbols meaning
+
+// ?  <, >, <=, >=, ==, ===, !=, ===, !==
+
+const sco = 200
+
+if (sco > 100) {
+    const Power = "fly"
+    console.log(`User Power:${Power}`);
+}
+
+// console.log(`User Power:${Power}`);   
+
+//line ke bahar power define nhi aaega because global ke bahar axis nhi raheta isliye 
+//   const or let use karte hai but var mein wapas declear hojata hai jo nhi hona chahiye
+
+
+// let j = 10;
+// for (let i = 0; i <= j; i++) {
+//     let st = "  ";
+//     let sss= " *"
+//     console.log(sss.repeat(i)+ st.repeat(i));
+// }
+
+// ? shorthand notation 
+
+const balances = 1000;
+//  if(balances > 500) console.log("test"),console.log("test2");   //?aisa nhi karna hai
+
+if (balances < 500) {
+    console.log("balance is less than 500");
+} else if (balances < 700) {
+    console.log("Balance is less than 700");
+} else if (balances < 900) {
+    console.log("Balance is less than 900");
+} else {
+    console.log("Balance is less than 1200");
+}
+
+// ?else if last mein use karna hai toh <<< ; >>> use karna padhta hai
+
+// if(balances < 500){
+//     console.log("balance is less than 500");
+// } else if(balances < 700){
+//     console.log("Balance is less than 700");
+// }else if(balances < 900){
+//     console.log("Balance is less than 900");
+// }else if(balances == 1000);{
+//     console.log("Balances is 1000 rupes");
+// }
+// ? else();{} use kar sakte ho
+
+const userLoggedIns = true;
+const debitCards = true;
+const loggedInFormGoogles = false;
+const loggedInFormEmails = true;
+
+if (userLoggedIns && debitCards) {
+    console.log("Allow to Buy Course");
+}
+
+if (loggedInFormGoogles || loggedInFormEmails) {
+    console.log("User Logged In");
+}
+
+// ? && >> and  || >> or
+
+// Switch  value check karne ke liye kaam aata hai
+
+// switch (key) {
+//     case value:
+
+//         break;
+
+//     default:
+//         break;
+// }
+
+
+let month = 3;
+
+switch (month) {
+    case 1:
+        console.log("Given Month is January")
+        break;
+    case 2:
+        console.log("Given Month is February")
+        break;
+    case 3:
+        console.log("Given Month is March")
+        console.log("Birthday of V")
+        break;
+    case 4:
+        console.log("Given Month is April")
+        break;
+
+    default:
+        console.log("Default Case Match");
+
+        break;
+}
+// we can use string values 
+
+// ? Topic >> Truthy/falsy values
+
+const userGmail = "adi@gamil.com"       // [] >> toh bhi usergmail leleta  hai and "" ko empty dikhata 
+
+if (userGmail) {
+    console.log("Got UserGmail");
+} else {
+    console.log("Don't have user  gmail");
+}
+
+
+// ? Falsy values
+// false, 0, -0, BigInt 0n, null,  undefined, NaN
+
+// ? truthy values
+//"0", 'false', " ", [], {}, function(){}, etc.
+
+const UserS = []
+
+if (UserS.length === 0) {
+    console.log("Empty Array");
+}
+
+// ? imp
+
+const emptyObject = {}
+
+if (Object.keys(emptyObject).length === 0) {
+    console.log("empty Object")
+}
+
+//? Question
+
+// false == 0
+// false == ''
+// 0 == ''
+
+// Nullish coaleshing operater (??): null undefiend
+
+val1;
+// val1 = 5 ?? 10;     //5
+// val1 = null ?? 10;   //10
+// val1= undefined ?? 100  //100
+// val1 = null ?? 13 ?? 10; //13
+
+console.log(val1)  //uper se utha raha hai values 5 because same val1 use kiya hai
+
+
+// ? Terniary Operator
+// condition ? ture : false
+
+const ice = 100;
+ice <= 80 ? console.log("Ice is less than 80") : console.log("Ice is More than 80")
+
+
+// ?iterations 
+
+//  for 
+
+for (let index = 0; index <= 5; index++) {
+    const element = index;
+    if (element == 5) {
+        console.log("5 is a odd number");
+    }
+    console.log(element);
+
+}
+
+for (let i = 0; i <= 5; i++) {
+    console.log(`outer loopp value: ${i}`)
+    for (let j = 0; j <= 5; j++) {
+        // console.log(`inner loop value ${j}`)        
+        // console.log(`inner loop value ${j} and inner loop ${i}`) 
+        // console.log(i + '*' + j + ' = ' + i*j)       
+    }
+
+}
+
+let myArray = ["Vinita", "Aditya", "Aanchal"]
+
+for (let index = 0; index < myArray.length; index++) {
+    const element = myArray[index];
+    console.log(element);
+
+}
+
+// ? break and continue
+
+
+for (let index = 0; index <= 10; index++) {
+    const element = index;
+    if (element == 5) {
+        console.log("5 is detected");
+        break   //continue
+    }
+    console.log(`number print till : ${element}`);
+
+}
+
+// ? *****************************************************************lecture no 28 Loops*********************************************
+
+// while (condition) {
+    
+// }
+
+let index = 0;
+while (index <= 10) {
+    console.log(`Table of two: ${index}`)
+    index = index + 2;
+}
+
+
+let av = ["Vinita", "Aditya", "Vinu", "Adi"]
+
+let arrr = 0;
+
+while (arrr < av.length) {
+    console.log(`We are there ${av[arrr]}`)
+    arrr = arrr + 1;
+}
 
 
 
