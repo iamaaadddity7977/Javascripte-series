@@ -684,16 +684,16 @@ console.log(l.length);  // count length property aise hi
 // https://www.youtube.com/watch?v=ByhtOgF6uYM&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=25       Notes inn the video 
 // file:///C:/Users/sarry/Downloads/Aditya/All in one/tutorial.html
 
-let val1 = 5
-let val2 = 10
+let val11 = 5
+let val22 = 10
 
 function addition(NuM1, NuM2) {
     let total = NuM1 + NuM2
     return total;
 }
 
-let result1 = addition(val1, val2)
-console.log(result1);
+let result11 = addition(val11, val22)
+console.log(result11);
 let result2 = addition(10, 3);
 console.log(result2)
 
@@ -727,18 +727,18 @@ one()
 // https://www.youtube.com/watch?v=ByhtOgF6uYM&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=25       Notes inn the video 
 // file:///C:/Users/sarry/Downloads/Aditya/All in one/tutorial.html
 
-let val1 = 5
-let val2 = 10
+let val111 = 5
+let val222 = 10
 
 function addition(NuM1, NuM2) {
     let total = NuM1 + NuM2
     return total;
 }
 
-let result1 = addition(val1, val2)
+let result1 = addition(val111, val222)
 console.log(result1);
-let result2 = addition(10, 3);
-console.log(result2)
+let result22 = addition(10, 3);
+console.log(result22)
 
 // file:///C:/Users/sarry/Downloads/Aditya/All in one/tutorial.html
 
@@ -920,13 +920,13 @@ if (Object.keys(emptyObject).length === 0) {
 
 // Nullish coaleshing operater (??): null undefiend
 
-val1;
+//?val1;
 // val1 = 5 ?? 10;     //5
 // val1 = null ?? 10;   //10
 // val1= undefined ?? 100  //100
 // val1 = null ?? 13 ?? 10; //13
 
-console.log(val1)  //uper se utha raha hai values 5 because same val1 use kiya hai
+// console.log(val1)  //uper se utha raha hai values 5 because same val1 use kiya hai
 
 
 // ? Terniary Operator
@@ -1004,11 +1004,223 @@ while (arrr < av.length) {
 
 
 
+// while (condition) {
+    
+// }
+
+let indexx = 0;
+while (indexx <= 10) {
+    console.log(`Table of two: ${indexx}`)
+    indexx = indexx + 2;
+}
+
+
+let ava = ["Vinita", "Aditya", "Vinu", "Adi"]
+
+let arrrra = 0;
+
+while (arrrra < ava.length) {
+    console.log(`We are there ${ava[arrrra]}`)
+    arrrra = arrrra + 1;
+}
+
+
+
+// console.log("Hello world");
+
+// let myNum = 0;
+// while (myNum <= 10) {
+//     console.log(`Table of two : ${myNum}`)
+//     myNum = myNum + 2
+// }
+
+// let av = ["aditya", "vinita", "Adi", "Vinu"]
+// let arrr = 0;
+
+// while (arrr < av.length) {
+//     console.log(`My heroes ${av[arrr]}`)
+//     arrr = arrr +1;
+// }
+
+// ? do while loop 
+
+// do {
+    
+// } while (condition);    
+// ? phele run hota hai fir condition check hoti hai ek run toh hoga hi
+
+let f = 0;
+
+do {
+    console.log(`print Number : ${f} `);
+    f++;
+} while (f <= 10);
+
+
+let ff = 94;
+
+do {
+    console.log(`print Number : ${ff} `);
+    ff++;
+} while (ff <= 73);
+
+// ? *************************************************************** lecture no 29 High Order Array loops  **************************************
+
+// ? for of  //? arrays
+
+// ["", "", ""]      //arrays
+// [{}, {}, {}, {}]  //string 
+
+const arrrr = [1,2,3,4,5,6,7];
+
+for (const num of arrrr) {
+    console.log(`Each Array ${num}`)
+}
+
+const world = "Hello World!";
+for (const wor of world) {
+    console.log(`Each words ${wor}`)
+}
+
+// ?  Maps
+
+const map = new Map()
+
+map.set('IN','INDIA');
+map.set('USA','United states of America');
+map.set('IN','INDIA');
+map.set('Fr','France');
+map.set('IN','INDIA');    // wapas print nhi karta same value ko
+
+console.log(map)
+
+for (const [key, value] of map) {
+    console.log(key, ":-", value )
+}
+
+// ? Y3eh work karta hai
+
+// const myObject =  new Map()
+//     map.set('game1', 'COD');
+//     map.set('game2', 'temple run two');
+
+        // work nhi karega because wow string my object kp read nhi karega bas array 
+
+// const myObject =  {
+//     game1: 'COD',
+//     game2: 'temple run two'
+
+// }
+
+
+// for (const  [key, value] of myObject) {
+//     console.log(key, ':-', value)
+// }
+
+// ? for in loop   //? object ke liye
+
+// for (const key in object) {
+//     if (Object.prototype.hasOwnProperty.call(object, key)) {
+//         const element = object[key];
+        
+//     }
+// }for (const key in object) {
+//
+// }
+
+const myv = {
+    javascript: "Js",
+    Cpluse: "cpp",
+    ruby: "rb"
+    // ss: "swift by Apple"
+   }
+
+   for (const key in myv) {
+console.log(`${key} shortcut form of this is ${myv[key]}`)
+   }
+
+   const programming = ["JS", "Py", "java", "ry", "cpp"]
+
+   for (const key in programming) {
+console.log(programming[key])
+        
+    }
+   
+
+    for (const element of programming) {
+        console.log(programming)
+    }
+   
+
+    const maps = new Map()
+
+    map.set('IN','INDIA');
+    map.set('USA','United states of America');
+    map.set('IN','INDIA');
+    map.set('Fr','France');
+    map.set('IN','INDIA');  
+    
+    
+    for (const key in maps) {
+console.log(key)
+    }       // kuch bhi show nhi karega  map iretetion mein aate hai
+
+
+//? for each loop
+
+const coddings = ["Java","Javascript", "Python", "Cpp"]
+
+coddings.forEach( function (val){
+    console.log(val)
+} )
+
+// ? Arrow function example 
+console.log("----------------------------------------");
+
+
+coddings.forEach( (items)=> {
+    console.log(items)
+} )
+
+console.log("----------------------------------------");
+
+function printMe(items){
+    console.log(items)
+}
+coddings.forEach(printMe)
+
+console.log("----------------------------------------");
+
+coddings.forEach(  (item, index, arr)=>{
+    console.log(item, index, arr)
+})
+
+const mySpace = [
+    {
+        myName: "Aditya",
+        age: 18,
+    }, {
+        myName: "vinita",
+        age: 17,
+    } ,{
+        myName: "Aanchal",
+        age: 20,
+    }
+]
+mySpace.forEach( (item) => {
+    console.log(item)
+    // console.log(item.age)
+    // console.log(item.myName)
+})
 
 
 
 
-// *************************************************************lecture no 30
+
+
+
+
+// *************************************************************lecture no 30*****************************************************
 //? Filter map Reduce 
 
 const coddding = ["Aditya", "Ironman", "Hulk", "Superman", "spiderman"];
